@@ -1,1 +1,1 @@
-# janisproject
+# janis-web

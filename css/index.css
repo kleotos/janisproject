@@ -1,0 +1,396 @@
+@import "/node_modules/font-awesome/css/font-awesome.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+div.text {
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.hero nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: black;
+}
+.logo {
+  color: white;
+  font-size: 28px;
+}
+/* .logo span {
+  color: #ea1538;
+  text-transform: uppercase;
+} */
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul {
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ea1538;
+  transition: 0.3s;
+}
+
+nav button {
+  border: none;
+  background: #ea1538;
+  padding: 12px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+button:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+section {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+section .health_writer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+section .health_writer img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+section .health_writer .pr-i {
+  font-size: 12px;
+}
+section .health_writer .pr-ii {
+  font-size: 12px;
+  margin-top: 0;
+}
+section .img-2 .responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+section .ph-3 {
+  background: #fff;
+  border-radius: 0.5rem;
+}
+section .ph-3 p {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: #ea1538;
+}
+section .dowager {
+  border-radius: 0.5rem;
+  background: #e2e2e2;
+}
+section .dowager .img-2 {
+  border: 0;
+}
+section .dowager .team_container {
+  width: 100%;
+  height: auto;
+}
+section .team-text {
+  color: #ea1538 !important;
+  font-size: 25px;
+  margin-top: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section .rowe {
+  width: 60%;
+  margin: auto !important;
+  margin-top: 20px;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  justify-items: center !important;
+}
+
+section .profile-card {
+  background-color: #ffffff;
+  width: 270px;
+  height: 250px;
+  margin: 20px 10px 10px 10px;
+}
+
+section .profile-content {
+  padding: 15px;
+}
+section .container-team .row .profile-card .profile-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+section .profile-image {
+  text-align: center;
+}
+section .desc {
+  text-align: center;
+}
+
+section.desc p {
+  font-size: 13px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+  display: flex;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  background: #6225e6;
+  transition: 1s;
+  width: 80%;
+  height: 80px;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #ea1538;
+}
+
+.cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+span {
+  transform: skewX(15deg);
+}
+
+span:nth-child(2) {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+path.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+path.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: #fbc638;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+section .bntt .butt {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 900px;
+  height: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+section .bntt  span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+section .bntt span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+section  .butt:hover span {
+  padding-right: 25px;
+}
+
+section  .butt:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+section .responsive-2 {
+  max-width: 50%;
+  max-height: 50%;
+  margin: auto;
+  border-radius: 1.8rem;
+}
+
+section .img-2 p {
+  border-left: 4px solid red;
+  font-size: 16px;
+}
+section .questions {
+  border-radius: 0.5rem;
+  background: #ebf2f8;
+}
+section .row .hr-styled{
+  border: none;
+  border-top: 5px dotted #999;
+  width: 80% !important;
+  border-color: #1b1b1b;
+}
+section .important {
+  border-radius: 0.5rem;
+  background:  #fff9bb;
+}
+
+article {
+  margin-top: 5rem;
+}
+article .bntt .butt {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 70%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+article .bntt .butt span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+article .bntt .butt span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+article .bntt .butt:hover span {
+  padding-right: 25px;
+}
+
+article .bntt .butt:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+section .ht {
+  width:70%;
+}
+section .section-2 {
+  width: 30%;
+  position: fixed;
+  right: 0;
+  background: #fbc638;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px dashed black;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 950px) {
+  section .ht{
+      display: flex;
+      flex-direction: column !important;
+      width: 100%;
+  }
+  section .section-2 {
+    visibility: hidden;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
